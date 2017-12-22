@@ -1,0 +1,1735 @@
+{
+  "contractName": "FoodSafe",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "LocationId",
+          "type": "uint256"
+        },
+        {
+          "name": "Name",
+          "type": "string"
+        },
+        {
+          "name": "Secret",
+          "type": "string"
+        }
+      ],
+      "name": "AddNewLocation",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "GetTrailCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "TrailNo",
+          "type": "uint256"
+        }
+      ],
+      "name": "GetLocation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60606040526000600160006101000a81548160ff021916908360ff160217905550341561002b57600080fd5b61069d8061003a6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063988bbca31461005c578063bbe42af814610105578063ec85862d14610134575b600080fd5b341561006757600080fd5b610103600480803590602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610251565b005b341561011057600080fd5b610118610385565b604051808260ff1660ff16815260200191505060405180910390f35b341561013f57600080fd5b610155600480803590602001909190505061039c565b604051808060200186815260200185815260200184815260200180602001838103835288818151815260200191508051906020019080838360005b838110156101ab578082015181840152602081019050610190565b50505050905090810190601f1680156101d85780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156102115780820151818401526020810190506101f6565b50505050905090810190601f16801561023e5780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b610259610568565b82816000018190525083816020018181525050818160800181905250428160600181815250506000600160009054906101000a900460ff1660ff161415156102cd57600080600160009054906101000a900460ff1660ff168152602001908152602001600020600101548160400181815250505b80600080600160009054906101000a900460ff1660ff168152602001908152602001600020600082015181600001908051906020019061030e9291906105a4565b5060208201518160010155604082015181600201556060820151816003015560808201518160040190805190602001906103499291906105a4565b509050506001600081819054906101000a900460ff168092919060010191906101000a81548160ff021916908360ff1602179055505050505050565b6000600160009054906101000a900460ff16905090565b6103a4610624565b60008060006103b1610624565b60008087815260200190815260200160002060000160008088815260200190815260200160002060010154600080898152602001908152602001600020600201546000808a8152602001908152602001600020600301546000808b8152602001908152602001600020600401848054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104b25780601f10610487576101008083540402835291602001916104b2565b820191906000526020600020905b81548152906001019060200180831161049557829003601f168201915b50505050509450808054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561054e5780601f106105235761010080835404028352916020019161054e565b820191906000526020600020905b81548152906001019060200180831161053157829003601f168201915b505050505090509450945094509450945091939590929450565b60a06040519081016040528061057c610638565b815260200160008152602001600081526020016000815260200161059e610638565b81525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106105e557805160ff1916838001178555610613565b82800160010185558215610613579182015b828111156106125782518255916020019190600101906105f7565b5b509050610620919061064c565b5090565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b61066e91905b8082111561066a576000816000905550600101610652565b5090565b905600a165627a7a72305820f5e565fe15dbb36164506634cffb6dc8204a3c6a7226be644c06d97b21198db60029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063988bbca31461005c578063bbe42af814610105578063ec85862d14610134575b600080fd5b341561006757600080fd5b610103600480803590602001909190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509190803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843782019150505050505091905050610251565b005b341561011057600080fd5b610118610385565b604051808260ff1660ff16815260200191505060405180910390f35b341561013f57600080fd5b610155600480803590602001909190505061039c565b604051808060200186815260200185815260200184815260200180602001838103835288818151815260200191508051906020019080838360005b838110156101ab578082015181840152602081019050610190565b50505050905090810190601f1680156101d85780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b838110156102115780820151818401526020810190506101f6565b50505050905090810190601f16801561023e5780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b610259610568565b82816000018190525083816020018181525050818160800181905250428160600181815250506000600160009054906101000a900460ff1660ff161415156102cd57600080600160009054906101000a900460ff1660ff168152602001908152602001600020600101548160400181815250505b80600080600160009054906101000a900460ff1660ff168152602001908152602001600020600082015181600001908051906020019061030e9291906105a4565b5060208201518160010155604082015181600201556060820151816003015560808201518160040190805190602001906103499291906105a4565b509050506001600081819054906101000a900460ff168092919060010191906101000a81548160ff021916908360ff1602179055505050505050565b6000600160009054906101000a900460ff16905090565b6103a4610624565b60008060006103b1610624565b60008087815260200190815260200160002060000160008088815260200190815260200160002060010154600080898152602001908152602001600020600201546000808a8152602001908152602001600020600301546000808b8152602001908152602001600020600401848054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104b25780601f10610487576101008083540402835291602001916104b2565b820191906000526020600020905b81548152906001019060200180831161049557829003601f168201915b50505050509450808054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561054e5780601f106105235761010080835404028352916020019161054e565b820191906000526020600020905b81548152906001019060200180831161053157829003601f168201915b505050505090509450945094509450945091939590929450565b60a06040519081016040528061057c610638565b815260200160008152602001600081526020016000815260200161059e610638565b81525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106105e557805160ff1916838001178555610613565b82800160010185558215610613579182015b828111156106125782518255916020019190600101906105f7565b5b509050610620919061064c565b5090565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b61066e91905b8082111561066a576000816000905550600101610652565b5090565b905600a165627a7a72305820f5e565fe15dbb36164506634cffb6dc8204a3c6a7226be644c06d97b21198db60029",
+  "sourceMap": "25:1044:0:-;;;261:1;242:20;;;;;;;;;;;;;;;;;;;;25:1044;;;;;;;;;;;;;;",
+  "deployedSourceMap": "25:1044:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;269:454;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;729:86;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;821:246;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;269:454:0;356:27;;:::i;:::-;412:4;393:11;:16;;:23;;;;451:10;426:11;:22;;:35;;;;;492:6;471:11;:18;;:27;;;;532:3;508:11;:21;;:27;;;;;564:1;550:10;;;;;;;;;;;:15;;;;546:107;;;614:5;:17;620:10;;;;;;;;;;;614:17;;;;;;;;;;;;;:28;;;581:11;:30;;:61;;;;;546:107;683:11;663:5;:17;669:10;;;;;;;;;;;663:17;;;;;;;;;;;;;:31;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;704:10;;:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;269:454;;;;:::o;729:86::-;775:5;798:10;;;;;;;;;;;791:17;;729:86;:::o;821:246::-;877:6;;:::i;:::-;885:4;891;897;903:6;;:::i;:::-;929:5;:14;935:7;929:14;;;;;;;;;;;:19;;950:5;:14;956:7;950:14;;;;;;;;;;;:25;;;977:5;:14;983:7;977:14;;;;;;;;;;;:33;;;1012:5;:14;1018:7;1012:14;;;;;;;;;;;:24;;;1038:5;:14;1044:7;1038:14;;;;;;;;;;;:21;;921:139;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;821:246;;;;;;;:::o;25:1044::-;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.6;\n\ncontract FoodSafe {\n\n    struct Location {\n        string Name;\n        uint LocationId;\n        uint PreviousLocationId;\n        uint Timestamp;\n        string Secret;\n    }\n\n    mapping(uint => Location) Trail;\n    uint8 TrailCount = 0;\n\n    function AddNewLocation(uint LocationId, string Name, string Secret) public {\n\n        Location memory newLocation;\n        newLocation.Name = Name;\n        newLocation.LocationId = LocationId;\n        newLocation.Secret = Secret;\n        newLocation.Timestamp = now;\n\n        if (TrailCount != 0) {\n            newLocation.PreviousLocationId = Trail[TrailCount].LocationId;\n        }\n\n        Trail[TrailCount] = newLocation;\n        TrailCount++;\n    }\n\n    function GetTrailCount() public view returns (uint8){\n        return TrailCount;\n    }\n\n    function GetLocation(uint TrailNo) public view returns (string, uint, uint, uint, string) {\n        return (Trail[TrailNo].Name, Trail[TrailNo].LocationId, Trail[TrailNo].PreviousLocationId, Trail[TrailNo].Timestamp, Trail[TrailNo].Secret);\n    }\n}",
+  "sourcePath": "/home/alex/projects/ethereum-foodsafe/contracts/FoodSafe.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/alex/projects/ethereum-foodsafe/contracts/FoodSafe.sol",
+      "exportedSymbols": {
+        "FoodSafe": [
+          126
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".6"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            126
+          ],
+          "name": "FoodSafe",
+          "scope": 127
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "FoodSafe.Location",
+              "name": "Location",
+              "scope": 126,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "Name",
+                  "scope": 12,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string storage pointer",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string storage pointer"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "76:6:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "76:11:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "LocationId",
+                  "scope": 12,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 4,
+                    "name": "ElementaryTypeName",
+                    "src": "97:4:0"
+                  }
+                ],
+                "id": 5,
+                "name": "VariableDeclaration",
+                "src": "97:15:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "PreviousLocationId",
+                  "scope": 12,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 6,
+                    "name": "ElementaryTypeName",
+                    "src": "122:4:0"
+                  }
+                ],
+                "id": 7,
+                "name": "VariableDeclaration",
+                "src": "122:23:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "Timestamp",
+                  "scope": 12,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 8,
+                    "name": "ElementaryTypeName",
+                    "src": "155:4:0"
+                  }
+                ],
+                "id": 9,
+                "name": "VariableDeclaration",
+                "src": "155:14:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "Secret",
+                  "scope": 12,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string storage pointer",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string storage pointer"
+                    },
+                    "id": 10,
+                    "name": "ElementaryTypeName",
+                    "src": "179:6:0"
+                  }
+                ],
+                "id": 11,
+                "name": "VariableDeclaration",
+                "src": "179:13:0"
+              }
+            ],
+            "id": 12,
+            "name": "StructDefinition",
+            "src": "50:149:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "Trail",
+              "scope": 126,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct FoodSafe.Location storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 13,
+                    "name": "ElementaryTypeName",
+                    "src": "213:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Location",
+                      "referencedDeclaration": 12,
+                      "type": "struct FoodSafe.Location storage pointer"
+                    },
+                    "id": 14,
+                    "name": "UserDefinedTypeName",
+                    "src": "221:8:0"
+                  }
+                ],
+                "id": 15,
+                "name": "Mapping",
+                "src": "205:25:0"
+              }
+            ],
+            "id": 16,
+            "name": "VariableDeclaration",
+            "src": "205:31:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "TrailCount",
+              "scope": 126,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint8",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint8",
+                  "type": "uint8"
+                },
+                "id": 17,
+                "name": "ElementaryTypeName",
+                "src": "242:5:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 18,
+                "name": "Literal",
+                "src": "261:1:0"
+              }
+            ],
+            "id": 19,
+            "name": "VariableDeclaration",
+            "src": "242:20:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "AddNewLocation",
+              "payable": false,
+              "scope": 126,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "LocationId",
+                      "scope": 79,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 20,
+                        "name": "ElementaryTypeName",
+                        "src": "293:4:0"
+                      }
+                    ],
+                    "id": 21,
+                    "name": "VariableDeclaration",
+                    "src": "293:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Name",
+                      "scope": 79,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 22,
+                        "name": "ElementaryTypeName",
+                        "src": "310:6:0"
+                      }
+                    ],
+                    "id": 23,
+                    "name": "VariableDeclaration",
+                    "src": "310:11:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "Secret",
+                      "scope": 79,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 24,
+                        "name": "ElementaryTypeName",
+                        "src": "323:6:0"
+                      }
+                    ],
+                    "id": 25,
+                    "name": "VariableDeclaration",
+                    "src": "323:13:0"
+                  }
+                ],
+                "id": 26,
+                "name": "ParameterList",
+                "src": "292:45:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 27,
+                "name": "ParameterList",
+                "src": "345:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        null
+                      ],
+                      "initialValue": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "newLocation",
+                          "scope": 79,
+                          "stateVariable": false,
+                          "storageLocation": "memory",
+                          "type": "struct FoodSafe.Location memory",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "Location",
+                              "referencedDeclaration": 12,
+                              "type": "struct FoodSafe.Location storage pointer"
+                            },
+                            "id": 28,
+                            "name": "UserDefinedTypeName",
+                            "src": "356:8:0"
+                          }
+                        ],
+                        "id": 29,
+                        "name": "VariableDeclaration",
+                        "src": "356:27:0"
+                      }
+                    ],
+                    "id": 30,
+                    "name": "VariableDeclarationStatement",
+                    "src": "356:27:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string memory"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "Name",
+                              "referencedDeclaration": 3,
+                              "type": "string memory"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 29,
+                                  "type": "struct FoodSafe.Location memory",
+                                  "value": "newLocation"
+                                },
+                                "id": 31,
+                                "name": "Identifier",
+                                "src": "393:11:0"
+                              }
+                            ],
+                            "id": 33,
+                            "name": "MemberAccess",
+                            "src": "393:16:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 23,
+                              "type": "string memory",
+                              "value": "Name"
+                            },
+                            "id": 34,
+                            "name": "Identifier",
+                            "src": "412:4:0"
+                          }
+                        ],
+                        "id": 35,
+                        "name": "Assignment",
+                        "src": "393:23:0"
+                      }
+                    ],
+                    "id": 36,
+                    "name": "ExpressionStatement",
+                    "src": "393:23:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "LocationId",
+                              "referencedDeclaration": 5,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 29,
+                                  "type": "struct FoodSafe.Location memory",
+                                  "value": "newLocation"
+                                },
+                                "id": 37,
+                                "name": "Identifier",
+                                "src": "426:11:0"
+                              }
+                            ],
+                            "id": 39,
+                            "name": "MemberAccess",
+                            "src": "426:22:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 21,
+                              "type": "uint256",
+                              "value": "LocationId"
+                            },
+                            "id": 40,
+                            "name": "Identifier",
+                            "src": "451:10:0"
+                          }
+                        ],
+                        "id": 41,
+                        "name": "Assignment",
+                        "src": "426:35:0"
+                      }
+                    ],
+                    "id": 42,
+                    "name": "ExpressionStatement",
+                    "src": "426:35:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "string memory"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "Secret",
+                              "referencedDeclaration": 11,
+                              "type": "string memory"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 29,
+                                  "type": "struct FoodSafe.Location memory",
+                                  "value": "newLocation"
+                                },
+                                "id": 43,
+                                "name": "Identifier",
+                                "src": "471:11:0"
+                              }
+                            ],
+                            "id": 45,
+                            "name": "MemberAccess",
+                            "src": "471:18:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 25,
+                              "type": "string memory",
+                              "value": "Secret"
+                            },
+                            "id": 46,
+                            "name": "Identifier",
+                            "src": "492:6:0"
+                          }
+                        ],
+                        "id": 47,
+                        "name": "Assignment",
+                        "src": "471:27:0"
+                      }
+                    ],
+                    "id": 48,
+                    "name": "ExpressionStatement",
+                    "src": "471:27:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "Timestamp",
+                              "referencedDeclaration": 9,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 29,
+                                  "type": "struct FoodSafe.Location memory",
+                                  "value": "newLocation"
+                                },
+                                "id": 49,
+                                "name": "Identifier",
+                                "src": "508:11:0"
+                              }
+                            ],
+                            "id": 51,
+                            "name": "MemberAccess",
+                            "src": "508:21:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 197,
+                              "type": "uint256",
+                              "value": "now"
+                            },
+                            "id": 52,
+                            "name": "Identifier",
+                            "src": "532:3:0"
+                          }
+                        ],
+                        "id": 53,
+                        "name": "Assignment",
+                        "src": "508:27:0"
+                      }
+                    ],
+                    "id": 54,
+                    "name": "ExpressionStatement",
+                    "src": "508:27:0"
+                  },
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_uint8",
+                            "typeString": "uint8"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "!=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 19,
+                              "type": "uint8",
+                              "value": "TrailCount"
+                            },
+                            "id": 55,
+                            "name": "Identifier",
+                            "src": "550:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "30",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 0",
+                              "value": "0"
+                            },
+                            "id": 56,
+                            "name": "Literal",
+                            "src": "564:1:0"
+                          }
+                        ],
+                        "id": 57,
+                        "name": "BinaryOperation",
+                        "src": "550:15:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "operator": "=",
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": true,
+                                      "member_name": "PreviousLocationId",
+                                      "referencedDeclaration": 7,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 29,
+                                          "type": "struct FoodSafe.Location memory",
+                                          "value": "newLocation"
+                                        },
+                                        "id": 58,
+                                        "name": "Identifier",
+                                        "src": "581:11:0"
+                                      }
+                                    ],
+                                    "id": 60,
+                                    "name": "MemberAccess",
+                                    "src": "581:30:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "LocationId",
+                                      "referencedDeclaration": 5,
+                                      "type": "uint256"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": true,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "type": "struct FoodSafe.Location storage ref"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 16,
+                                              "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+                                              "value": "Trail"
+                                            },
+                                            "id": 61,
+                                            "name": "Identifier",
+                                            "src": "614:5:0"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 19,
+                                              "type": "uint8",
+                                              "value": "TrailCount"
+                                            },
+                                            "id": 62,
+                                            "name": "Identifier",
+                                            "src": "620:10:0"
+                                          }
+                                        ],
+                                        "id": 63,
+                                        "name": "IndexAccess",
+                                        "src": "614:17:0"
+                                      }
+                                    ],
+                                    "id": 64,
+                                    "name": "MemberAccess",
+                                    "src": "614:28:0"
+                                  }
+                                ],
+                                "id": 65,
+                                "name": "Assignment",
+                                "src": "581:61:0"
+                              }
+                            ],
+                            "id": 66,
+                            "name": "ExpressionStatement",
+                            "src": "581:61:0"
+                          }
+                        ],
+                        "id": 67,
+                        "name": "Block",
+                        "src": "567:86:0"
+                      }
+                    ],
+                    "id": 68,
+                    "name": "IfStatement",
+                    "src": "546:107:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct FoodSafe.Location storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct FoodSafe.Location storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 16,
+                                  "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+                                  "value": "Trail"
+                                },
+                                "id": 69,
+                                "name": "Identifier",
+                                "src": "663:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 19,
+                                  "type": "uint8",
+                                  "value": "TrailCount"
+                                },
+                                "id": 70,
+                                "name": "Identifier",
+                                "src": "669:10:0"
+                              }
+                            ],
+                            "id": 71,
+                            "name": "IndexAccess",
+                            "src": "663:17:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 29,
+                              "type": "struct FoodSafe.Location memory",
+                              "value": "newLocation"
+                            },
+                            "id": 72,
+                            "name": "Identifier",
+                            "src": "683:11:0"
+                          }
+                        ],
+                        "id": 73,
+                        "name": "Assignment",
+                        "src": "663:31:0"
+                      }
+                    ],
+                    "id": 74,
+                    "name": "ExpressionStatement",
+                    "src": "663:31:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "++",
+                          "prefix": false,
+                          "type": "uint8"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 19,
+                              "type": "uint8",
+                              "value": "TrailCount"
+                            },
+                            "id": 75,
+                            "name": "Identifier",
+                            "src": "704:10:0"
+                          }
+                        ],
+                        "id": 76,
+                        "name": "UnaryOperation",
+                        "src": "704:12:0"
+                      }
+                    ],
+                    "id": 77,
+                    "name": "ExpressionStatement",
+                    "src": "704:12:0"
+                  }
+                ],
+                "id": 78,
+                "name": "Block",
+                "src": "345:378:0"
+              }
+            ],
+            "id": 79,
+            "name": "FunctionDefinition",
+            "src": "269:454:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "GetTrailCount",
+              "payable": false,
+              "scope": 126,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 80,
+                "name": "ParameterList",
+                "src": "751:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 87,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint8",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint8",
+                          "type": "uint8"
+                        },
+                        "id": 81,
+                        "name": "ElementaryTypeName",
+                        "src": "775:5:0"
+                      }
+                    ],
+                    "id": 82,
+                    "name": "VariableDeclaration",
+                    "src": "775:5:0"
+                  }
+                ],
+                "id": 83,
+                "name": "ParameterList",
+                "src": "774:7:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 83
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 19,
+                          "type": "uint8",
+                          "value": "TrailCount"
+                        },
+                        "id": 84,
+                        "name": "Identifier",
+                        "src": "798:10:0"
+                      }
+                    ],
+                    "id": 85,
+                    "name": "Return",
+                    "src": "791:17:0"
+                  }
+                ],
+                "id": 86,
+                "name": "Block",
+                "src": "781:34:0"
+              }
+            ],
+            "id": 87,
+            "name": "FunctionDefinition",
+            "src": "729:86:0"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "GetLocation",
+              "payable": false,
+              "scope": 126,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "TrailNo",
+                      "scope": 125,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 88,
+                        "name": "ElementaryTypeName",
+                        "src": "842:4:0"
+                      }
+                    ],
+                    "id": 89,
+                    "name": "VariableDeclaration",
+                    "src": "842:12:0"
+                  }
+                ],
+                "id": 90,
+                "name": "ParameterList",
+                "src": "841:14:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 125,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 91,
+                        "name": "ElementaryTypeName",
+                        "src": "877:6:0"
+                      }
+                    ],
+                    "id": 92,
+                    "name": "VariableDeclaration",
+                    "src": "877:6:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 125,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 93,
+                        "name": "ElementaryTypeName",
+                        "src": "885:4:0"
+                      }
+                    ],
+                    "id": 94,
+                    "name": "VariableDeclaration",
+                    "src": "885:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 125,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 95,
+                        "name": "ElementaryTypeName",
+                        "src": "891:4:0"
+                      }
+                    ],
+                    "id": 96,
+                    "name": "VariableDeclaration",
+                    "src": "891:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 125,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 97,
+                        "name": "ElementaryTypeName",
+                        "src": "897:4:0"
+                      }
+                    ],
+                    "id": 98,
+                    "name": "VariableDeclaration",
+                    "src": "897:4:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 125,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string memory",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string storage pointer"
+                        },
+                        "id": 99,
+                        "name": "ElementaryTypeName",
+                        "src": "903:6:0"
+                      }
+                    ],
+                    "id": 100,
+                    "name": "VariableDeclaration",
+                    "src": "903:6:0"
+                  }
+                ],
+                "id": 101,
+                "name": "ParameterList",
+                "src": "876:34:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 101
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "tuple(string storage ref,uint256,uint256,uint256,string storage ref)"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "Name",
+                              "referencedDeclaration": 3,
+                              "type": "string storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct FoodSafe.Location storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 16,
+                                      "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+                                      "value": "Trail"
+                                    },
+                                    "id": 102,
+                                    "name": "Identifier",
+                                    "src": "929:5:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 89,
+                                      "type": "uint256",
+                                      "value": "TrailNo"
+                                    },
+                                    "id": 103,
+                                    "name": "Identifier",
+                                    "src": "935:7:0"
+                                  }
+                                ],
+                                "id": 104,
+                                "name": "IndexAccess",
+                                "src": "929:14:0"
+                              }
+                            ],
+                            "id": 105,
+                            "name": "MemberAccess",
+                            "src": "929:19:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "LocationId",
+                              "referencedDeclaration": 5,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct FoodSafe.Location storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 16,
+                                      "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+                                      "value": "Trail"
+                                    },
+                                    "id": 106,
+                                    "name": "Identifier",
+                                    "src": "950:5:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 89,
+                                      "type": "uint256",
+                                      "value": "TrailNo"
+                                    },
+                                    "id": 107,
+                                    "name": "Identifier",
+                                    "src": "956:7:0"
+                                  }
+                                ],
+                                "id": 108,
+                                "name": "IndexAccess",
+                                "src": "950:14:0"
+                              }
+                            ],
+                            "id": 109,
+                            "name": "MemberAccess",
+                            "src": "950:25:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "PreviousLocationId",
+                              "referencedDeclaration": 7,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct FoodSafe.Location storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 16,
+                                      "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+                                      "value": "Trail"
+                                    },
+                                    "id": 110,
+                                    "name": "Identifier",
+                                    "src": "977:5:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 89,
+                                      "type": "uint256",
+                                      "value": "TrailNo"
+                                    },
+                                    "id": 111,
+                                    "name": "Identifier",
+                                    "src": "983:7:0"
+                                  }
+                                ],
+                                "id": 112,
+                                "name": "IndexAccess",
+                                "src": "977:14:0"
+                              }
+                            ],
+                            "id": 113,
+                            "name": "MemberAccess",
+                            "src": "977:33:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "Timestamp",
+                              "referencedDeclaration": 9,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct FoodSafe.Location storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 16,
+                                      "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+                                      "value": "Trail"
+                                    },
+                                    "id": 114,
+                                    "name": "Identifier",
+                                    "src": "1012:5:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 89,
+                                      "type": "uint256",
+                                      "value": "TrailNo"
+                                    },
+                                    "id": 115,
+                                    "name": "Identifier",
+                                    "src": "1018:7:0"
+                                  }
+                                ],
+                                "id": 116,
+                                "name": "IndexAccess",
+                                "src": "1012:14:0"
+                              }
+                            ],
+                            "id": 117,
+                            "name": "MemberAccess",
+                            "src": "1012:24:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "Secret",
+                              "referencedDeclaration": 11,
+                              "type": "string storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct FoodSafe.Location storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 16,
+                                      "type": "mapping(uint256 => struct FoodSafe.Location storage ref)",
+                                      "value": "Trail"
+                                    },
+                                    "id": 118,
+                                    "name": "Identifier",
+                                    "src": "1038:5:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 89,
+                                      "type": "uint256",
+                                      "value": "TrailNo"
+                                    },
+                                    "id": 119,
+                                    "name": "Identifier",
+                                    "src": "1044:7:0"
+                                  }
+                                ],
+                                "id": 120,
+                                "name": "IndexAccess",
+                                "src": "1038:14:0"
+                              }
+                            ],
+                            "id": 121,
+                            "name": "MemberAccess",
+                            "src": "1038:21:0"
+                          }
+                        ],
+                        "id": 122,
+                        "name": "TupleExpression",
+                        "src": "928:132:0"
+                      }
+                    ],
+                    "id": 123,
+                    "name": "Return",
+                    "src": "921:139:0"
+                  }
+                ],
+                "id": 124,
+                "name": "Block",
+                "src": "911:156:0"
+              }
+            ],
+            "id": 125,
+            "name": "FunctionDefinition",
+            "src": "821:246:0"
+          }
+        ],
+        "id": 126,
+        "name": "ContractDefinition",
+        "src": "25:1044:0"
+      }
+    ],
+    "id": 127,
+    "name": "SourceUnit",
+    "src": "0:1069:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "1513957857599": {
+      "events": {},
+      "links": {},
+      "address": "0xfa304cefd863691a1b9a19bb678c09b4198efb0d"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2017-12-22T15:57:20.277Z"
+}
