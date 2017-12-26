@@ -4,25 +4,20 @@ import "../stylesheets/app.css";
 // Import libraries we need.
 import { default as Web3} from 'web3';
 import { default as contract } from 'truffle-contract'
-
-// Import our contract artifacts and turn them into usable abstractions.
-import metacoin_artifacts from '../../build/contracts/MetaCoin.json'
-
-// MetaCoin is our usable abstraction, which we'll use through the code below.
-var MetaCoin = contract(metacoin_artifacts);
+import { default as CryptoJS} from 'crypto-js';
 
 // The following code is simple to show off interacting with your contracts.
 // As your needs grow you will likely need to change its form and structure.
 // For application bootstrapping, check out window.addEventListener below.
 var accounts;
 var account;
+var foodSafeABI;
+var foodSafeContract;
+var foodSafeCode;
 
 window.App = {
   start: function() {
     var self = this;
-
-    // Bootstrap the MetaCoin abstraction for Use.
-    MetaCoin.setProvider(web3.currentProvider);
 
     // Get the initial account balance so it can be displayed.
     web3.eth.getAccounts(function(err, accs) {
@@ -39,49 +34,49 @@ window.App = {
       accounts = accs;
       account = accounts[0];
 
-      self.refreshBalance();
+      web3.eth.defaultAccount = account;
+      var foodSafeSource = "pragma solidity ^0.4.6; contract FoodSafe { struct Location { string Name; uint LocationId; uint PreviousLocationId; uint Timestamp; string Secret; } mapping(uint => Location) Trail; uint8 TrailCount = 0; function AddNewLocation(uint LocationId, string Name, string Secret) public { Location memory newLocation; newLocation.Name = Name; newLocation.LocationId = LocationId; newLocation.Secret = Secret; newLocation.Timestamp = now; if (TrailCount != 0) { newLocation.PreviousLocationId = Trail[TrailCount].LocationId; } Trail[TrailCount] = newLocation; TrailCount++; } function GetTrailCount() public view returns (uint8){ return TrailCount; } function GetLocation(uint TrailNo) public view returns (string, uint, uint, uint, string) { return (Trail[TrailNo].Name, Trail[TrailNo].LocationId, Trail[TrailNo].PreviousLocationId, Trail[TrailNo].Timestamp, Trail[TrailNo].Secret); } }";
+      web3.eth.compile.solidity(foodSafeSource, function (error, foodSafeCompiled) {
+        foodSafeABI = foodSafeCompiled["<stdin>:FoodSafe"].info.abiDefinition;
+        foodSafeContract = web3.eth.contract(foodSafeABI);
+        foodSafeCode = foodSafeCompiled["<stdin>:FoodSafe"].code;
+      })
     });
   },
 
-  setStatus: function(message) {
-    var status = document.getElementById("status");
-    status.innerHTML = message;
-  },
-
-  refreshBalance: function() {
-    var self = this;
-
-    var meta;
-    MetaCoin.deployed().then(function(instance) {
-      meta = instance;
-      return meta.getBalance.call(account, {from: account});
-    }).then(function(value) {
-      var balance_element = document.getElementById("balance");
-      balance_element.innerHTML = value.valueOf();
-    }).catch(function(e) {
-      console.log(e);
-      self.setStatus("Error getting balance; see log.");
+  createContract: function() {
+    foodSafeContract.new("", {from:account, data:foodSafeCode, gas:3000000}, function (error, deployedContract) {
+      if (deployedContract.address) {
+        document.getElementById("contractAddress").value = deployedContract.address;
+      }
     });
   },
 
-  sendCoin: function() {
-    var self = this;
+  addNewLocation: function() {
+      var contractAddress = document.getElementById("contractAddress").value;
+      var deployedFoodSafe = foodSafeContract.at(contractAddress);
+      var locationId = document.getElementById("locationId").value;
+      var locationName = document.getElementById("locationName").value;
+      var locationSecret = document.getElementById("secret").value;
+      var passPhrase = document.getElementById("passPhrase").value;
+      var encryptedSecret = CryptoJS.AES.encrypt(locationSecret,passPhrase).toString();
+      deployedFoodSafe.AddNewLocation(locationId, locationName, encryptedSecret, function(error){
+          console.log(error);
+      })
+  },
 
-    var amount = parseInt(document.getElementById("amount").value);
-    var receiver = document.getElementById("receiver").value;
-
-    this.setStatus("Initiating transaction... (please wait)");
-
-    var meta;
-    MetaCoin.deployed().then(function(instance) {
-      meta = instance;
-      return meta.sendCoin(receiver, amount, {from: account});
-    }).then(function() {
-      self.setStatus("Transaction complete!");
-      self.refreshBalance();
-    }).catch(function(e) {
-      console.log(e);
-      self.setStatus("Error sending coin; see log.");
+  getCurrentLocation: function() {
+    var contractAddress = document.getElementById("contractAddress").value;
+    var deployedFoodSafe = foodSafeContract.at(contractAddress);
+    var passPhrase = document.getElementById("passPhrase").value;
+    deployedFoodSafe.GetTrailCount.call(function (error, trailCount){
+      deployedFoodSafe.GetLocation.call(trailCount-1, function(error, returnValues){
+        document.getElementById("locationId").value = returnValues[1];
+        document.getElementById("locationName").value = returnValues[0];
+        var encryptedSecret = returnValues[4];
+        var decryptedSecret = CryptoJS.AES.decrypt(encryptedSecret, passPhrase).toString(CryptoJS.enc.Utf8);
+        document.getElementById("secret").value = decryptedSecret;
+      })
     });
   }
 };
